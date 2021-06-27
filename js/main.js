@@ -103,8 +103,10 @@ function game(playerTurn) {
 
     let gameComplete = document.getElementById('game_completed')
     let winner = document.getElementById('winner_notice')
-
+    
     notify.classList.add('notify_display')
+
+    let locked = document.getElementById("play_buttons");
 
     if(roundWinner == 'player'){
         playerScore += 1;
@@ -126,6 +128,7 @@ function game(playerTurn) {
     }
     
     if(playerScore >= 5) {
+        locked.classList.add('play_buttons_locked');
         gameComplete.classList.add('game_complete_f');
         winner.innerHTML = "You've Won!";
     }else if(computerScore >= 5) {

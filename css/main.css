@@ -136,6 +136,10 @@ main {
   -moz-box-shadow: 4px 7px 19px 0px rgba(0,0,0,0.75);
 }
 
+.play_buttons_locked {
+  pointer-events: none;
+}
+
 .play_button {
   background-color: var(--bs-cyan);
   height: 10rem;
