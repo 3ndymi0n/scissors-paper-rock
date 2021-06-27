@@ -1,26 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/main.css" rel="stylesheet">
-    
-    <title>scissors-paper-rock</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <p id="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rem dolore itaque incidunt perspiciatis maiores?</p>
-            <p>test paragraph</p>
-        </nav>
-    </header>
-    <main>
-        
-    </main>
-    <footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/main.css" rel="stylesheet" />
 
-    </footer>
+    <title>scissors-paper-rock</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="row">
+        <div class="stats">
+          <h3>Player Stats</h3>
+          <span id="player_score"><p>Current Score:</p></span>
+          <p>Turn History:<span class="turns" id="player_turns"></span></p>
+        </div>
+        <div class="stats">
+          <h3>Computer Stats</h3>
+          <span id="computer_score"><p>Current Score:</p></span>
+          <p>Turn History:<span class="turns" id="computer_turns"></span></p>
+        </div>
+      </div>
+      <div class="row menu">
+        <div class="banner">
+          <h2>Scissors Paper Rock</h2>
+        </div>
+        <div class="menu_buttons">
+          <div class ="button_row">
+            <a href="" class="btn btn-primary" id="new_game">New Game</a>
+          </div>
+          <div class="notifications" id="notifications">
+            <div class="game_complete" id="game_completed">
+              <h2>Game Over!</h2>
+              <p>That was a great match!</p>
+              <p id="winner_notice"></p>
+              <p>Click the New Game button above to start again!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row actions">
+        <div class="play_buttons">
+          <div class="img_holder">
+            <img class="play_button" id="p-scissors" src="assets/scissors.png" alt="scissors" />
+            <img class="play_button" id="p-paper" src="assets/paper.png" alt="paper" />
+            <img class="play_button" id="p-rock" src="assets/rock.png" alt="rock" />
+          </div>
+        </div>  <!-- Need to swap play buttons to the left -->
+      </div>
+    </main>
     <script crossorigin="anonymous" defer="defer" src="js/main.js"></script>
-</body>
+  </body>
 </html>
